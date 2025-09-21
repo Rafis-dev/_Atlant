@@ -1,0 +1,135 @@
+.price
+  background-color: rgba(#2194FF, 0.05)
+  padding-top: 46px
+  padding-bottom: 44px
+  position: relative
+  // .price__title
+  &__title
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 43px
+    text-align: center
+    color: #2194FF
+    margin-bottom: 49px
+
+  // .price__inner
+  &__inner
+    display: flex
+    justify-content: space-between
+
+  // .price__box-left
+  &__box-left
+    max-width: 259px
+    width: 100%
+    padding-top: 27px
+
+  // .price__box-title
+  &__box-title
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 43px
+    color: #F1F1F1
+    margin-bottom: 21px
+    span
+      display: block
+      font-size: 24px
+      line-height: 29px
+      color: #2194FF
+
+  // .price__box-text
+  &__box-text
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #F1F1F1
+    margin-bottom: 36px
+
+  // .price__box-btn
+  &__box-btn
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    color: #F1F1F1
+    border: none
+    background-color: $blue
+    padding: 10px 35px
+    border-radius: 50px
+
+  // .price__box-center
+  &__box-center
+
+  // .price__box-right
+  &__box-right
+    max-width: 259px
+    width: 100%
+    padding-top: 27px
+
+  // .price__arrow
+  &__arrow
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -38px
+    animation: updown 2s ease-in-out infinite
+
+@keyframes updown
+  0%
+    bottom: -25px
+
+  50%
+    bottom: -38px
+
+  100%
+    bottom: -25px
+
+.price-center
+  // .price-center__content
+  &__content
+    text-align: center
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    color: rgba(241, 241, 241, 0.7)
+    margin-bottom: 15px
+
+  // .price-center__title
+  &__title
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 13px
+
+  // .price-center__ratio
+  &__ratio
+    display: flex
+    justify-content: center
+
+  // .price-center__ratio-quantity
+  &__ratio-quantity
+    font-size: 36px
+    line-height: 43px
+    span
+      font-size: 18px
+      line-height: 22px
+      display: block
+    &:not(:last-child)
+      padding-right: 26px
+      border-right: 1px solid rgba(241, 241, 241, 0.3)
+      margin-right: 25px
+
+  // .price-center__picture
+  &__picture
+    max-width: 542px
+    width: 100%
+
+  // .price-center__img
+  &__img
+    width: 100%
+    object-fit: cover

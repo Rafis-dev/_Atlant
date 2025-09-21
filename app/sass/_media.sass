@@ -1,0 +1,304 @@
+@media (max-width: 1170px)
+  .header
+    margin-bottom: 40px
+  .weather__box-text
+    color: #fff
+    @include text-border
+  .main-content__title
+    @include text-border
+  .main-content__title-text
+    @include text-border
+  .main-section__content
+    padding-top: 0
+  .main-content__title-text
+    &::before
+      content: ""
+      position: absolute
+      background-image: url('../images/title-text-arrow-copy.svg')
+  .main-section
+    padding-bottom: 100px
+    background-position: bottom 0 right -270px
+  .main-content__weather
+    margin-bottom: 30px
+@media (max-width: 1050px)
+  .companies__inner
+    flex-wrap: wrap
+    justify-content: flex-start
+    column-gap: 16px
+
+@media (max-width: 999px)
+  .price__inner
+    flex-wrap: wrap
+  .price__box-center
+    order: 1
+    margin: 0 auto
+    margin-top: 50px
+  .price__box-left, .price__box-right
+    max-width: 310px
+    text-align: center
+  .swiper-button-prev, .swiper-button-next
+    display: none
+  .swiper-slide__wrapper
+    max-width: 650px
+  .ask
+    margin-bottom: 30px
+  .ask__inner
+    justify-content: center
+  .ask__content
+    flex-basis: 100%
+    margin-bottom: 40px
+  .ask__form-input
+    max-width: 100%
+  .ask__form-btn
+    max-width: 100%
+  .ask__image-descr
+    left: -10%
+    bottom: -60px
+  .ask__title
+    text-align: center
+  .map__inner
+    display: block
+  .map__content
+    text-align: center
+@media (max-width: 768px)
+  .header
+    margin-bottom: 40px
+  .header__inner
+    column-gap: 20px
+    row-gap: 30px
+    flex-wrap: wrap
+    justify-content: center
+  .main-section__content
+    max-width: 100%
+    text-align: center
+  .main-section
+    padding-bottom: 20px
+    background-position: bottom 0 right -300px
+  .main-content__title
+    font-size: 48px
+    line-height: 50px
+    margin-bottom: 60px
+  .main-content__btn
+    @include button-style(100%)
+  .main-content__title-text
+    margin-bottom: 150px
+  .main-content__btn-text
+    @include text-border
+  .main-content__weather
+    margin-bottom: 100px
+  .weather__box-icons
+    justify-content: center
+  .price__inner
+    justify-content: center
+  .price__box-left, .price__box-right
+    max-width: 100%
+    padding-top: 0
+  .price__box-left
+    margin-bottom: 30px
+  .price__box-btn
+    width: 100%
+  .price__title
+    font-size: 32px
+    margin-bottom: 30px
+  .price__box-title
+    font-size: 32px
+    span
+      font-size: 22px
+  .price__box-text
+    font-size: 14px
+  .advantages__title
+    font-size: 32px
+  .advantages__box-img-wrapper
+    height: auto
+  .advantages__box
+    max-width: 100%
+    br
+      display: none
+  .advantages__inner
+    row-gap: 50px
+  .advantages__text
+    max-width: 100%
+    font-size: 32px
+  .advantages__footnote
+    margin-left: 0
+    margin-right: auto
+  .tab__btn
+    max-width: 100%
+  .volume__title, .reviews__title, .questions__title, .ask__title, .order__title, .map__title
+    font-size: 32px
+  .swiper-slide__wrapper
+    max-width: 500px
+  .swiper-slide
+    &__avatar
+      max-width: 180px
+      max-height: 220px
+  .swiper-slide
+    &__wrapper
+      padding: 20px
+  .swiper-pagination-bullet
+    width: 30px
+    height: 5px
+  .companies__inner
+    flex-wrap: wrap
+    justify-content: center
+
+@media (max-width: 640px)
+  .swiper-slide__wrapper
+    max-width: 450px
+  .swiper-slide__avatar
+    max-width: 160px
+    max-height: 200px
+
+@media (max-width: 580px)
+  .header__inner
+    display: block
+    text-align: center
+  .header__logo
+    display: block
+    &-text
+      padding: 0
+      margin-top: 0
+      display: block
+      margin-bottom: 25px
+      &::before
+        display: none
+      br
+        display: none
+    &-img
+      display: block
+      margin: 0 auto
+      margin-bottom: 10px
+  .header__phone-number
+    font-size: 18px
+  .header__phone-ask
+    font-size: 14px
+  .main-content__title
+    font-size: 36px
+    line-height: 40px
+  .main-content__title-text
+    font-size: 22px
+    margin-bottom: 80px
+  .main-content__weather
+    display: block
+  .weather__box
+    &:not(:last-child)
+      margin-bottom: 25px
+  .main-section
+    background-position: bottom 0 right -600px
+  .main-content__btn
+    font-size: 16px
+    letter-spacing: 0.5px
+    line-height: 21px
+  .main-content__title-text
+    &::before
+      content: ""
+      position: absolute
+      background-image: url('../images/title-text-arrow-copy.svg')
+      background-repeat: no-repeat
+      background-size: contain
+      width: 90px
+      height: 80px
+      top: 60px
+      right: -20px
+      transform: rotate(15deg)
+  .main-content__btn-text
+    font-size: 14px
+  .price__title
+    font-size: 28px
+    line-height: 33px
+    margin-bottom: 25px
+  .price__box-title
+    font-size: 28px
+  .price-center__title
+    letter-spacing: .5px
+  .price-center__ratio-quantity
+    font-size: 28px
+    line-height: 33px
+  .price__arrow
+    width: 20%
+    bottom: -28px
+  @keyframes updown
+    0%
+      bottom: -12px
+
+    50%
+      bottom: -28px
+
+    100%
+      bottom: -12px
+  .advantages__title, .volume__title, .reviews__title, .questions__title, .ask__title, .order__title, .map__title
+    font-size: 28px
+  .order__title
+    margin-bottom: 25px
+  .advantages__box-title
+    font-size: 22px
+  .advantages__text
+    font-size: 24px
+  .tab__btn
+    font-size: 16px
+    letter-spacing: .5px
+  .swiper-slide__wrapper
+    display: block
+    max-width: 350px
+    padding: 10px 10px 10px 15px
+  .swiper-slide__avatar
+    max-width: 100px
+    max-height: 100px
+    border-radius: 50%
+    margin: 0 auto
+  .swiper-slide__name
+    font-size: 20px
+    display: block
+    text-align: center
+  .swiper-slide__city
+    font-size: 16px
+    text-align: center
+  .swiper-slide__text
+    font-size: 12px
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px)
+  .accordion__title
+    font-size: 14px
+  .accordion__content
+    font-size: 14px
+  .accordion
+    padding: 17px 0
+  .ask
+    padding: 40px 0
+    margin-bottom: 60px
+  .ask__picture
+    height: auto
+  .ask__image-descr
+    left: 0
+    bottom: -60px
+    padding: 10px
+    text-align: center
+  .ask__image-name
+    font-size: 22px
+  .ask__image-job
+    font-size: 14px
+  .order__btn
+    font-size: 16px
+    letter-spacing: .5px
+  .map__content
+    padding: 20px
+  .map__title-text, .map__office-title, .map__office-address, .map__phone-title, .map__phone-number
+    font-size: 16px
+  .map__image
+    height: 250px
+  .modal__title
+    font-size: 22px
+    line-height: 27px
+  .modal__form-btn
+    font-size: 18px
+    margin-top: 12px
+  .modal__main
+    padding: 20px
+  .modal__form-input
+    padding: 12px
+@media (max-width: 440px)
+  .swiper-slide__avatar
+    max-width: 90px
+    max-height: 90px
+  .swiper-slide__wrapper
+    max-width: 265px

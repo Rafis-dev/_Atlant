@@ -1,0 +1,58 @@
+.header
+  padding-top: 18px
+  // .header__inner
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  // .header__logo
+  &__logo
+    display: flex
+    align-items: center
+
+  // .header__logo-img
+  &__logo-img
+    margin-right: 24px
+  // .header__logo-text
+  &__logo-text
+    font-family: 'Open Sans', sans-serif
+    font-style: italic
+    font-weight: 400
+    font-size: 16px
+    line-height: 18px
+    color: #2194FF
+    padding-left: 21px
+    position: relative
+    margin-top: 20px
+    &::before
+      content: ""
+      position: absolute
+      width: 1px
+      height: 100%
+      left: 0
+      background-color: #fff
+
+  // .header__phone
+  &__phone
+
+  // .header__phone-number
+  &__phone-number
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: #F1F1F1
+
+  // .header__phone-ask
+  &__phone-ask
+    display: block
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    text-decoration-line: underline
+    color: #2194FF
+    text-align: center

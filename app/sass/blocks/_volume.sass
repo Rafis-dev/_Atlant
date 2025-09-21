@@ -1,0 +1,68 @@
+.volume
+  padding-top: 34px
+  padding-bottom: 64px
+  background-color: rgba(#2194FF, 0.05)
+  // .volume__title
+  &__title
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 43px
+    text-align: center
+    color: #2194FF
+    margin-bottom: 35px
+
+  // .volume__tabs
+  &__tabs
+
+.tabs
+  &-list
+    text-align: center
+    margin-bottom: 55px
+    width: 100%
+    overflow-x: auto
+    white-space: nowrap
+    // .tabs-list__item
+    &__item
+      display: inline-block
+      text-align: center
+      padding: 10px
+      max-width: 164px
+      width: 100%
+      background: rgba(241, 241, 241, 0.2)
+      border-radius: 20px
+      font-family: 'Russo One'
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 22px
+      color: rgba(241, 241, 241, 0.7)
+      text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25)
+      transition: background .3s ease
+      &:not(:last-child)
+        margin-right: 24px
+      &.active
+        background: $blue
+        color: rgb(241, 241, 241)
+      @media (any-hover: hover)
+        cursor: pointer
+
+  &-content
+    display: none
+    &.active
+      display: block
+
+.tab
+  // .tab__image
+  &__image
+    display: block
+    margin: 0 auto
+    height: 260px
+    width: 100%
+    object-fit: contain
+  // .tab__btn
+  &__btn
+    display: block
+    margin: 0 auto
+    @include button-style(295px)

@@ -1,0 +1,84 @@
+.main-section
+  background-image: url('../images/header-bg.png')
+  background-repeat: no-repeat
+  background-position: top 0 right -270px
+  padding-bottom: 72px
+  // .main-section__content
+  &__content
+    max-width: 528px
+    width: 100%
+    padding-top: 30px
+.main-content
+  // .main-content__weather
+  &__weather
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 12px
+
+  // .main-content__title
+  &__title
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 64px
+    line-height: 63px
+    color: $blue
+    margin-bottom: 14px
+
+  // .main-content__title-text
+  &__title-text
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: #F1F1F1
+    display: inline-block
+    position: relative
+    margin-bottom: 40px
+    &::before
+      content: ""
+      position: absolute
+      background-image: url('../images/title-text-arrow.svg')
+      width: 95px
+      height: 90px
+      right: -100px
+      transform: rotate(0)
+  // .main-content__btn
+  &__btn
+    overflow: hidden
+    @include button-style(395px)
+    margin-bottom: 13px
+  // .main-content__btn-text
+  &__btn-text
+    display: block
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #F1F1F1
+    padding-left: 19px
+
+.weather
+  // .weather__box
+  &__box
+
+  // .weather__box-icons
+  &__box-icons
+    display: flex
+    align-items: center
+    column-gap: 8px
+    margin-bottom: 7px
+  &__box-icon
+
+  // .weather__box-text
+  &__box-text
+    display: block
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #F1F1F1

@@ -1,0 +1,67 @@
+.questions
+  background-color: rgba(#2194FF, 0.05)
+  padding: 40px 0
+  // .questions__title
+  &__title
+    font-family: 'Russo One', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 43px
+    text-align: center
+    color: #2194FF
+    margin-bottom: 27px
+.accordion
+  padding: 24px 0
+  border-top: 1px solid rgba(255, 255, 255, 0.1)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+
+  // .accordion__control
+  &__control
+    display: flex
+    align-items: center
+    padding-left: 32px
+    @media (any-hover: hover)
+      cursor: pointer
+
+  // .accordion__title
+  &__title
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    padding-left: 22px
+    text-transform: uppercase
+    color: #F1F1F1
+    transition: color .3s
+    .open &
+      color: $blue
+  // .accordion__icon
+  &__icon
+  &__image
+    vertical-align: middle
+    transition: transform .3s
+    .open &
+      transform: rotate(180deg)
+      path
+        fill: $blue
+  // .accordion__content
+  &__content
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #F1F1F1
+
+.accordion__content
+  max-height: 0
+  opacity: 0
+  overflow: hidden
+  transition: all .3s ease-out
+  box-sizing: content-box
+  padding-left: 54px
+  .open &
+    opacity: 1
+    margin-top: 16px
